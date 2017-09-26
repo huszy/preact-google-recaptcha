@@ -1,3 +1,4 @@
+[![Build][travis.img]][travis.url]
 [![Dependencies][deps.img]][deps.url]
 [![Dev Dependencies][devdeps.img]][devdeps.url]
 
@@ -55,7 +56,7 @@ In order to translate the reCaptcha widget, you should create a global variable 
 
 ```js
 window.recaptchaOptions = {
-  lang: 'fr'
+  lang: 'en'
 }
 ```
 
@@ -65,37 +66,9 @@ The component also has some utility functions that can be called.
 
 - `getResponse()` returns the value of the captcha field
 
-### Invisible reCAPTCHA
 
-[Invisible reCAPTCHA](https://developers.google.com/recaptcha/docs/versions)
-
-This component supports invisible options. See the [reCAPTCHA documentation](https://developers.google.com/recaptcha/docs/invisible) to see how to configure it.
-
-With the invisible option, you need to handle things a bit differently. You will need to call the `execute` method yourself.
-
-```jsx
-import { h, Component } from 'preact';
-import ReCaptcha from 'preact-google-recaptcha';
-
-function onChange(value) {
-  console.log("Captcha value:", value);
-}
-
-let captcha;
-
-render(
-  <form onSubmit={() => { captcha.execute(); }}>
-    <ReCaptcha
-      ref={(el) => { captcha = el; }}
-      size="invisible"
-      sitekey="Your client site key"
-      onChange={onChange}
-    />
-  </form>,
-  document.body
-);
-```
-
+[travis.url]: https://travis-ci.org/huszy/preact-google-recaptcha
+[travis.img]: https://travis-ci.org/huszy/preact-google-recaptcha.svg?branch=master
 [deps.img]: https://david-dm.org/huszy/preact-google-recaptcha.svg
 [deps.url]: https://david-dm.org/huszy/preact-google-recaptcha
 [devdeps.img]: https://david-dm.org/huszy/preact-google-recaptcha/dev-status.svg
