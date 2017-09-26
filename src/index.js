@@ -111,11 +111,12 @@ export default class ReCaptcha extends Component {
 		}
 
 		isRecaptchaJSLibInjected = () => {
-			if (typeof window !== 'undefined') { return false; }
+			if (typeof window === 'undefined') { return false; }
 			if (!document.scripts || document.scripts.length === 0) { return false; }
-			return (document.scripts.find((script) => {
+			let scripts = Object.assign([], document.scripts);
+			return (scripts.filter((script) => {
 				return script.src.match(/((http|https):)?\/\/(www\.)?google\.com\/recaptcha\/(.*)/i) !== null;
-			})) !== undefined;
+			})).length > 0;
 		}
 
 		startTimer = () => {
