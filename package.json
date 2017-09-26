@@ -1,0 +1,41 @@
+{
+  "name": "preact-google-recaptcha",
+  "version": "1.0.0",
+  "description": "Preact Component Wrapper for Google reCAPTCHA",
+  "main": "dist/preact-google-recaptcha.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "webpack -p --config webpack.production.config.js",
+    "prepublish": "NODE_ENV=production npm run compile",
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix"
+  },
+  "keywords": [
+    "preact",
+    "recaptcha",
+    "google-recaptcha"
+  ],
+  "peerDependencies": {
+    "preact": ">=5"
+  },
+  "author": "Huszak Gabor",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.7.2",
+    "eslint-config-defaults": "^9.0.0",
+    "eslint-plugin-jest": "^21.1.0",
+    "eslint-plugin-react": "^7.4.0",
+    "path": "^0.12.7",
+    "preact": "^8.2.5",
+    "prop-types": "^15.6.0",
+    "webpack": "^3.6.0"
+  }
+}
