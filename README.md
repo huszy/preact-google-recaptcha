@@ -1,4 +1,3 @@
-[![npm version][npm.img]][npm.url]
 [![Dependencies][deps.img]][deps.url]
 [![Dev Dependencies][devdeps.img]][devdeps.url]
 
@@ -96,6 +95,11 @@ render(
   document.body
 );
 ```
+
+[deps.img]: https://david-dm.org/huszy/preact-google-recaptcha.svg
+[deps.url]: https://david-dm.org/huszy/preact-google-recaptcha
+[devdeps.img]: https://david-dm.org/huszy/preact-google-recaptcha/dev-status.svg
+[devdeps.url]: https://david-dm.org/huszy/preact-google-recaptcha#info=devDependencies
 
 [react-google-recaptcha]: https://github.com/dozoisch/react-google-recaptcha
 [reCAPTCHA]: https://www.google.com/recaptcha
