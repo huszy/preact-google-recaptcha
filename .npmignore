@@ -1,0 +1,6 @@
+test/
+.gitignore
+.travis.yml
+karma.conf.js
+webpack.config.test.js
+.editorconfig

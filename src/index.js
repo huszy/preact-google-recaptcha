@@ -50,13 +50,13 @@ export default class ReCaptcha extends Component {
 			return null;
 		}
 
-		handleExpired = () => {
+		handleChange = (response) => {
 			if (this.props.onChange) {
-				this.props.onChange();
+				this.props.onChange(response);
 			}
 		}
 
-		handleChange = () => {
+		handleExpired = () => {
 			if (this.props.onExpired) {
 				this.props.onExpired();
 			}

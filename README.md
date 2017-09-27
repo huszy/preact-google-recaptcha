@@ -22,8 +22,8 @@ You can then use the reCAPTCHA. The default require imports a wrapped component 
 import { h, Component } from 'preact';
 import ReCaptcha from 'preact-google-recaptcha';
 
-function onChange(value) {
-  console.log("Captcha value:", value);
+function onChange(response) {
+  console.log("Captcha response:", response);
 }
 
 render(
@@ -34,6 +34,13 @@ render(
   />,
   document.body
 );
+```
+
+### Example app
+
+First update your ```site_key``` in the ```example/index.js``` file and run the following command:
+```
+npm start
 ```
 
 ### Rendering Props
@@ -80,5 +87,4 @@ The component also has some utility functions that can be called.
 [docs]: https://developers.google.com/recaptcha
 [docs_theme]: https://developers.google.com/recaptcha/docs/faq#can-i-customize-the-recaptcha-widget
 [js_api]: https://developers.google.com/recaptcha/docs/display#js_api
-[rb]: https://github.com/react-bootstrap/react-bootstrap/
 [reCAPTCHA secure-token]: https://developers.google.com/recaptcha/docs/secure_token

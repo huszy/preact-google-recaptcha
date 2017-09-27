@@ -4,6 +4,7 @@
   "description": "Preact Component Wrapper for Google reCAPTCHA",
   "main": "dist/preact-google-recaptcha.js",
   "scripts": {
+    "start": "babel-node example/server.js",
     "test": "karma start --single-run",
     "test-watch": "karma start",
     "compile": "webpack -p --config webpack.production.config.js",
@@ -61,6 +62,7 @@
     "phantomjs": "^2.1.7",
     "preact": "^8.2.5",
     "prop-types": "^15.6.0",
-    "webpack": "^3.6.0"
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
   }
 }
