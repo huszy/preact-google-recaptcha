@@ -1,6 +1,6 @@
 {
   "name": "preact-google-recaptcha",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Preact Component Wrapper for Google reCAPTCHA",
   "main": "dist/preact-google-recaptcha.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "test": "karma start --single-run",
     "test-watch": "karma start",
     "compile": "webpack -p --config webpack.production.config.js",
-    "prepublish": "NODE_ENV=production npm run compile",
+    "prepare": "NODE_ENV=production npm run compile",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
     "patch": "release patch --run",
