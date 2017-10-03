@@ -1,6 +1,6 @@
 {
   "name": "preact-google-recaptcha",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Preact Component Wrapper for Google reCAPTCHA",
   "main": "dist/preact-google-recaptcha.js",
   "scripts": {
