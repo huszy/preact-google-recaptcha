@@ -1,5 +1,5 @@
 /** @jsx h */
-import { h, Component, render } from 'preact';
+import { h, render } from 'preact';
 import ReCaptcha from "../src"; // eslint-disable-line no-unused-vars
 
 describe("ReCAPTCHA", () => {
