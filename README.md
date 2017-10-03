@@ -12,6 +12,12 @@ Heavily inspired by [React Google Recaptcha][react-google-recaptcha], but remove
 npm install --save preact-google-recaptcha
 ```
 
+## Example
+
+```shell
+npm start
+```
+
 ## Usage
 
 All you need to do is [sign up for an API key pair][signup]. You will need the client key.
@@ -72,6 +78,7 @@ window.recaptchaOptions = {
 The component also has some utility functions that can be called.
 
 - `getResponse()` returns the value of the captcha field
+- `execute()` executes the invisible captcha, you will get the response back from the `onChange` callback.
 
 
 [travis.url]: https://travis-ci.org/huszy/preact-google-recaptcha
