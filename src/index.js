@@ -43,6 +43,13 @@ export default class ReCaptcha extends Component {
 		);
 	}
 
+		execute = () => {
+			if (isRecaptchaLoaded() && this.element && this.recaptchaId !== null) {
+				return grecaptcha.execute(this.recaptchaId);
+			}
+			return null;
+		}
+
 		getResponse = () => {
 			if (isRecaptchaLoaded() && this.element && this.recaptchaId !== null) {
 				return grecaptcha.getResponse(this.recaptchaId);
