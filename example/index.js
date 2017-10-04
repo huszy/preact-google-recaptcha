@@ -1,4 +1,5 @@
 import { h, render, Component } from 'preact';
+import "preact/debug";
 import ReCaptcha from '../src';
 
 const sitekey = 'xxxxx';
