@@ -1,14 +1,13 @@
 root = true
 
 [*]
-indent_style = tab
+indent_style = space
 end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[{package.json,.*rc,*.yml}]
-indent_style = space
+[{package.json,*.js,.*rc,*.yml}]
 indent_size = 2
 
 [*.md]

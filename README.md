@@ -81,12 +81,12 @@ The component also has some utility functions that can be called.
 - `execute()` executes the invisible captcha, you will get the response back from the `onChange` callback.
 
 
-[travis.url]: https://travis-ci.org/huszy/preact-google-recaptcha
-[travis.img]: https://travis-ci.org/huszy/preact-google-recaptcha.svg?branch=master
-[deps.img]: https://david-dm.org/huszy/preact-google-recaptcha.svg
-[deps.url]: https://david-dm.org/huszy/preact-google-recaptcha
-[devdeps.img]: https://david-dm.org/huszy/preact-google-recaptcha/dev-status.svg
-[devdeps.url]: https://david-dm.org/huszy/preact-google-recaptcha#info=devDependencies
+[travis.url]: https://travis-ci.org/claudio4/preact-google-recaptcha
+[travis.img]: https://travis-ci.org/claudio4/preact-google-recaptcha.svg?branch=master
+[deps.img]: https://david-dm.org/claudio4/preact-google-recaptcha.svg
+[deps.url]: https://david-dm.org/claudio4/preact-google-recaptcha
+[devdeps.img]: https://david-dm.org/claudio4/preact-google-recaptcha/dev-status.svg
+[devdeps.url]: https://david-dm.org/claudio4/preact-google-recaptcha#info=devDependencies
 
 [react-google-recaptcha]: https://github.com/dozoisch/react-google-recaptcha
 [reCAPTCHA]: https://www.google.com/recaptcha

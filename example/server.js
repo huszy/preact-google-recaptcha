@@ -5,19 +5,19 @@ const path = require('path');
 const port = process.env.PORT || 3000;
 
 new WebpackDevServer(webpack(config), {
-	contentBase: path.join(__dirname, 'build'),
-	publicPath: `${config.output.publicPath}`,
-	hot: true,
-	historyApiFallback: true,
-	stats: {
-		colors: true,
-		cached: false,
-		cachedAssets: false
-	}
+  contentBase: path.join(__dirname, 'build'),
+  publicPath: `${config.output.publicPath}`,
+  hot: true,
+  historyApiFallback: true,
+  stats: {
+    colors: true,
+    cached: false,
+    cachedAssets: false
+  }
 }).listen(port, '0.0.0.0', (err) => {
-	if (err) {
-		console.log(err);
-	}
+  if (err) {
+    console.log(err);
+  }
 
-	console.log(`Listening at 0.0.0.0: ${port}`);
+  console.log(`Listening at 0.0.0.0: ${port}`);
 });
