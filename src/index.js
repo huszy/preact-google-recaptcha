@@ -51,6 +51,14 @@ export default class ReCaptcha extends Component {
 		return false;
 	}
 
+	reset = () => {
+		if (isRecaptchaLoaded() && this.element && this.recaptchaId !== null) {
+			grecaptcha.reset(this.recaptchaId);
+			return true;
+		}
+		return false;
+	}
+
 		getResponse = () => {
 			if (isRecaptchaLoaded() && this.element && this.recaptchaId !== null) {
 				return grecaptcha.getResponse(this.recaptchaId);
