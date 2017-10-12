@@ -79,6 +79,7 @@ The component also has some utility functions that can be called.
 
 - `getResponse()` returns the value of the captcha field
 - `execute()` executes the invisible captcha, you will get the response back from the `onChange` callback.
+- `reset()` resets the captcha to his original state.
 
 
 [travis.url]: https://travis-ci.org/huszy/preact-google-recaptcha
