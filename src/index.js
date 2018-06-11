@@ -31,8 +31,10 @@ export default class ReCaptcha extends Component {
 		if (isRecaptchaLoaded() && this.element && this.recaptchaId !== null) {
 			this.removeRecaptcha();
 		}
-		window.___grecaptcha_cfg.count = 0;
-		window.___grecaptcha_cfg.clients = {};
+		if ( window.___grecaptcha_cfg ) {
+		    delete ___grecaptcha_cfg.clients[this.recaptchaId];
+		    ___grecaptcha_cfg.count--;
+		}
 	}
 
 	render() {
